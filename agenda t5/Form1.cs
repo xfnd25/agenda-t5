@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace agenda_t5
 {
-    public partial class Form1 : Form
+    public partial class txtSobrenome : Form
     {
-        public Form1()
+        public txtSobrenome()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddContato_Click(object sender, EventArgs e) 
+        {
+            Contato objetoContato = new Contato();
+            lstContatos.Items.Add(objetoContato.ToString());
+
         }
     }
 }
